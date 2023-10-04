@@ -1,7 +1,11 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="../assets/Barclays-Logo.png">
+    <br>
+    <br>
+    <HelloWorld msg="Welcome DarthCoders"/>
+    <br>
+
   </div>
 </template>
 
@@ -16,3 +20,12 @@ export default {
   }
 }
 </script>
+
+<style>
+.home{
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 400px;
+}
+
+</style>

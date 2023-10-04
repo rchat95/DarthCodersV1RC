@@ -1,8 +1,10 @@
 import axios from 'axios'
 
+//rest point URL
 const Employee_API_BASE_URL='http://localhost:8080/api/employees'
 
 class EmployeeService{
+    // returns the response of the REST API
     getEmployees(){
         return axios.get(Employee_API_BASE_URL)
     }
