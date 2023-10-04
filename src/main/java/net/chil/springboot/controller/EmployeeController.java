@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+// will let the class be a SPRING MVC REST controller which will be able to handle web requests
 @RequestMapping("/api/employees")
+//base path
 @CrossOrigin("http://localhost:8081/")
 public class EmployeeController {
 

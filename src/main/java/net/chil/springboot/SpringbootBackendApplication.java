@@ -15,36 +15,38 @@ public class SpringbootBackendApplication implements CommandLineRunner {
 		SpringApplication.run(SpringbootBackendApplication.class, args);
 	}
 
+	// inject employee repository
 	@Autowired
 	private EmployeeRepository employeeRepository;
 
 	@Override
 	public void run(String... args) throws Exception {
 		Employee employee1 = Employee.builder()
-				.firstName("chil")
-				.lastName("kwon")
-				.email("chilhoank@yahoo.ca")
+				.firstName("Anubha")
+				.lastName("Bhaik")
+				.email("anubhab@gmail.com")
 				.build();
 
 		Employee employee2 = Employee.builder()
-				.firstName("yun")
-				.lastName("kim")
-				.email("yunkim@yahoo.ca")
+				.firstName("Try")
+				.lastName("Name")
+				.email("TN@hotmail.com")
 				.build();
 
 		Employee employee3 = Employee.builder()
-				.firstName("michael")
-				.lastName("kwon")
-				.email("michalekwon@yahoo.ca")
+				.firstName("Apoorva")
+				.lastName("J")
+				.email("AJ@gmail.com")
 				.build();
 		Employee employee4 = Employee.builder()
-				.firstName("kevin")
-				.lastName("kwon")
-				.email("kevinkwon@yahoo.ca")
+				.firstName("Aastha")
+				.lastName("Bhaik")
+				.email("aasthab@yahoo.co.in")
 				.build();
 		employeeRepository.save(employee1);
 		employeeRepository.save(employee2);
 		employeeRepository.save(employee3);
+		employeeRepository.save(employee4);
 
 
 	}
